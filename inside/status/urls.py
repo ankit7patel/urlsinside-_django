@@ -3,8 +3,6 @@ from django.urls import path
 from status import views
 
 
-
-
 urlpatterns = [
     # path('home/',home)    #1
     path('',views.stat)

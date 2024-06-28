@@ -24,6 +24,7 @@ urlpatterns = [
     path('about/',include('about.urls')),
     path('status/',include('status.urls')),
     path('call/',include('call.urls')),
+    
 
 
 ]
