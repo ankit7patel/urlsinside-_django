@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-# from django.http import HttpResponse
+from django.shortcuts import render, render,redirect
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -9,3 +9,11 @@ from django.shortcuts import render, redirect
 
 def homee(request):
     return redirect("https://www.geeksforgeeks.org/html-input-tag")
+
+def registration(request):
+    return render(request,'registration.html')
+
+def registrationdata(request):
+    # return
+    print(request.method)
+    print(request.POST)

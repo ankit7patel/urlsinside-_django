@@ -9,8 +9,10 @@ from .views import *
 urlpatterns = [
     # path('home/',home)    #1
     # path('',views.home),
-    path('homee/',homee)
-   
+    # path('homee/',homee),
+    path('registration/',registration , name="registration"),
+    path('registrationdata/',registrationdata , name="registration")
+    
 
 
     
