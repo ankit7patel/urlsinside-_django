@@ -9,10 +9,9 @@
     <form action="{% url 'registration' %}" method="post">
     {% csrf_token %}
         <input type="text" name="name" placeholder="enter Name"> <br>
-        <input type="text" name="user" placeholder="enter username"> <br>
-        <input type="text" name="mon" placeholder=" enter mobile"> <br>
-        <input type="text" name="pas" placeholder=" enter password"> <br>
-        <input type="text" name="cpass" placeholder=" enter confirm password"> <br>
+        
+        <input type="integer" name="mobile" placeholder=" enter mobile"> <br>
+        
         <button type="submit"> registration </button>
        
     </form>

@@ -1,5 +1,7 @@
 from django.shortcuts import render, render,redirect
 from django.http import HttpResponse
+from .models import Student
+
 
 # Create your views here.
 
@@ -17,3 +19,11 @@ def registrationdata(request):
     # return
     print(request.method)
     print(request.POST)
+    name=request.POST.get('name')
+    mobile=request.POST.get('mobile')
+    print(name,mobile)
+    Student.objects.create(Name=name,Mobile=mobile)
+   
+    print("data save...")
+  
+
